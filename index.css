@@ -1,0 +1,53 @@
+.title{
+    
+
+}
+
+
+
+.introduce{
+    color: black;
+    text-align : center;
+    font-size: 20px;
+}
+
+.container{
+    background-color : pink;
+    border-radius: 50px;
+    width: 90%
+    margin-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.me{
+    width:300px;
+    float:center;
+    
+}
+
+.card{
+    margin-top:30%;
+    margin-left:10%;
+    font-size: 20px;
+    float:center;
+    background-color:yellow;
+    border: radius 50px;
+    width:70%;
+    margin-left: 5%;
+    padding-top: 5%;
+    papdding-bottom:5%;
+}
+
+.pole{
+    width:350px;
+    object-fit:cover;
+    float: center;
+}
+.card-1{
+    width: 500px;
+    height: 500px;
+    border-radius: 70%;
+    overflow:hidden;
+}
