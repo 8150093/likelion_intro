@@ -1,5 +1,6 @@
 .title{
-    
+    text-align: center;
+    font-weight: bolder;
 
 }
 
@@ -28,26 +29,39 @@
 }
 
 .card{
-    margin-top:30%;
-    margin-left:10%;
     font-size: 20px;
-    float:center;
-    background-color:yellow;
-    border: radius 50px;
-    width:70%;
-    margin-left: 5%;
-    padding-top: 5%;
-    papdding-bottom:5%;
+    text-align: center;
+    background-color:white;
 }
 
 .pole{
-    width:350px;
-    object-fit:cover;
-    float: center;
+    width: 400px;
+    height: 400px;
 }
+
+
 .card-1{
-    width: 500px;
-    height: 500px;
-    border-radius: 70%;
-    overflow:hidden;
+    font-size: 20px;
+    text-align: center;
+    background-color:skyblue;
+}
+.pororo{
+    width: 400px;
+    height: 400px;
+}
+
+.card-2{
+    font-size:20px;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.cook{
+    width: 400px;
+    height: 400px;
+
+}
+
+.trip{
+    width: 400px;
+    height: 400px;
 }
