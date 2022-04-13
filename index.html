@@ -50,7 +50,11 @@
       </nav>
       
       <div class = 'title'>
-        <h1>Hello who am I?</h1>
+        <h1>Who am I?</h1>
+      </div>
+
+      <div class="intro">
+        <h1 class="text"></h1>
       </div>
 <div class = 'introduce'>
 <div class = 'container'>
@@ -76,9 +80,51 @@
 <div class="card-2">
   <p>관심사 : 요리 & 여행 </p>
   <a href="https://www.instagram.com/eunbini_02/?hl=ko"><img class="cook" src="C:\Users\eunbi\OneDrive\바탕 화면\KakaoTalk_20220406_123503985.jpg"></a>
+  <button onclick="changelmg()">change</button>
   <a href="https://www.instagram.com/eunbini_02/?hl=ko"><img class="trip" src="C:\Users\eunbi\OneDrive\바탕 화면\KakaoTalk_20220406_123518671.jpg"></a>
 </div>
 </div>
+//<setWebDisplayAppearance-HTML></setWebDisplayAppearance-HTML>
+<script>
+  function changelmg(){
+    document.getElementsById("cook").src="C:\Users\eunbi\OneDrive\바탕 화면\은빈\코딩\멋사\자기소개\images\사본 -요리음식.jpg"
+  }
+
+  const content = "Hello I'm eunbin"
+  const text= document.querySelector(".text");
+  let index = 0;
+  function sleep(delay){
+    const start = new Date().getTime();
+    while(new Date().getTime()<start +delay);
+  }
+  function typing(){
+    text.textContent += content[index++];
+    if(index>content.length){
+      text.textContent = ""
+      index=0;
+      sleep(3000);
+    }
+  }
+  setInterval(typing,200);
+
+  function setDisplayAppearance(self){
+    var body = document.querySelector('body');
+    var btn = document.getElementById('btnDisplayMode');
+    if(self.value==='다크모드 전환'){
+      body.style.backgroundColor ='black';
+      body.style.color='white';
+      btn.style.backgroundColor='yellow';
+      btn.style.color='black';
+      self.value='라이트모드로 전환';
+    }else{
+      body.style.backgroundColor = 'white';
+      body.style.color='black';
+      btn.style.backgroundColor = "black";
+      btn.style.color="white";
+      self.value='다크모드로 전환';
+    }
+  }
+</script>
     
 </body>
 </html>
